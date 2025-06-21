@@ -10,12 +10,13 @@ function App() {
     name: "Asma Belhiba",
     title: "Full-Stack Developer & UI/UX Designer",
     description: "Crafting exceptional digital experiences with modern technologies and innovative design thinking.",
-    email: "your.email@example.com",
-    phone: "+1 (555) 123-4567",
-    location: "Your City, State",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://twitter.com/yourhandle",
-    github: "https://github.com/yourusername",
+    email: "benhibaasma02@gmail.com",
+    phone: "+216 92 677 186",
+    location: "Ariana, Tunisia",
+    linkedin: "https://www.linkedin.com/in/asma-b-9b7896213/",
+    twitter: "https://x.com/asmabenhiba1/with_replies",
+    github: "https://github.com/AsmaBelhiba",
+    behance: "https://www.behance.net/asmaben_hiba",
     resumeUrl: "#" // Add your resume URL here
   };
 
