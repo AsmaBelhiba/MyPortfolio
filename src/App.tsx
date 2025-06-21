@@ -7,7 +7,7 @@ function App() {
 
   // Personal Information - Update these with your details
   const personalInfo = {
-    name: "Your Name",
+    name: "Asma Belhiba",
     title: "Full-Stack Developer & UI/UX Designer",
     description: "Crafting exceptional digital experiences with modern technologies and innovative design thinking.",
     email: "your.email@example.com",
