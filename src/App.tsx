@@ -84,7 +84,7 @@ function App() {
       title: 'Smart Pricing API with Django & Reinforcement Learning',
       description: 'A Django-based API for dynamic e-commerce pricing using Reinforcement Learning (OpenAI Gym + Stable Baselines3). Built with my colleague, it lets products adjust prices based on stock, sales, and history.',
       image: aibetterImg,
-      technologies: ['Django', 'Python', 'JavaScript', 'Tailwind CSS', 'PostgreSQL', 'OpenAI Gym'],
+      technologies: ['Django', 'Python', 'PostgreSQL', 'OpenAI Gym', 'Stable Baselines3'],
       liveUrl: '#', // Replace with your project URL
       githubUrl: 'https://github.com/AsmaBelhiba/Django-RL-Pricing' // Replace with your GitHub repo URL
     },
