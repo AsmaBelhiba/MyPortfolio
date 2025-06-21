@@ -86,7 +86,7 @@ function App() {
       image: aibetterImg,
       technologies: ['Django', 'Python', 'JavaScript', 'Tailwind CSS'? 'PostgreSQL'],
       liveUrl: '#', // Replace with your project URL
-      githubUrl: 'https://github.com/AsmaBelhiba/Django-RL-Pricing' // Replace with your GitHub repo URL
+      githubUrl: 'https://github.com/AsmaBelhiba/Django-RL-Pricing', // Replace with your GitHub repo URL
     },
     {
       title: 'Task Management App',
