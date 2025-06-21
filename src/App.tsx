@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Code, Palette, Zap, Mail, Phone, MapPin, Download, ExternalLink, Github, Sun, Moon, Linkedin, Twitter } from 'lucide-react';
+import aibetterImg from './assets/aibetter.png';
+import cv from './assets/CV - Asma Belhiba.pdf';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -81,7 +83,7 @@ function App() {
     {
       title: 'Smart Pricing API with Django & Reinforcement Learning',
       description: 'A Django-based API for dynamic e-commerce pricing using Reinforcement Learning (OpenAI Gym + Stable Baselines3). Built with my colleague, it lets products adjust prices based on stock, sales, and history.',
-      image: '/aibetter.png',
+      image: aibetterImg,
       technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
       liveUrl: '#', // Replace with your project URL
       githubUrl: '#' // Replace with your GitHub repo URL
