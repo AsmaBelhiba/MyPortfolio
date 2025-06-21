@@ -27,7 +27,7 @@ function App() {
   
   stats: {
     projects: "15+",
-    experience: "3+ years",
+    experience: "5+ years",
     clients: "10+",
     satisfaction: "100%"
   }
@@ -281,11 +281,11 @@ function App() {
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-purple-500 mb-2">{aboutInfo.stats.experience}</div>
-                    <div className={themeClasses.textMuted}>Years Project Experience</div>
+                    <div className={themeClasses.textMuted}>Years Project extendsxperience</div>
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-pink-500 mb-2">{aboutInfo.stats.clients}</div>
-                    <div className={themeClasses.textMuted}>Happy Clients</div>
+                    <div className={themeClasses.textMuted}>Freelance Happy Clients</div>
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-green-500 mb-2">{aboutInfo.stats.satisfaction}</div>
