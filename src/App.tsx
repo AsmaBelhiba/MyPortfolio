@@ -281,7 +281,7 @@ function App() {
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-purple-500 mb-2">{aboutInfo.stats.experience}</div>
-                    <div className={themeClasses.textMuted}>Years Experience</div>
+                    <div className={themeClasses.textMuted}>Academic Years Experience</div>
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-pink-500 mb-2">{aboutInfo.stats.clients}</div>
