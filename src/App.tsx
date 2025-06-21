@@ -17,19 +17,22 @@ function App() {
     twitter: "https://x.com/asmabenhiba1/with_replies",
     github: "https://github.com/AsmaBelhiba",
     behance: "https://www.behance.net/asmaben_hiba",
-    resumeUrl: "#" // Add your resume URL here
+    resumeUrl: "/CV - Asma Belhiba.pdf" // Add your resume URL here
   };
 
-  const aboutInfo = {
-    intro: "I'm a passionate full-stack developer with over 5 years of experience creating digital solutions that make a difference. My journey began with a curiosity for how things work on the web, which evolved into a deep love for crafting exceptional user experiences.",
-    passion: "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical writing and mentoring.",
-    stats: {
-      projects: "50+",
-      experience: "5+",
-      clients: "30+",
-      satisfaction: "100%"
-    }
-  };
+ const aboutInfo = {
+  intro: "I'm a full-stack developer and engineering student specializing in Data Science and AI. My passion for coding started in high school and has grown through hands-on projects that sharpened both my technical and creative skills.",
+  
+  passion: "I'm also a freelance graphic designer, blending code and creativity to craft smart, user-friendly digital experiences. I enjoy learning new tech, designing sleek interfaces, and bringing ideas to life.",
+  
+  stats: {
+    projects: "15+",
+    experience: "3+ years",
+    clients: "10+",
+    satisfaction: "100%"
+  }
+};
+
 
   useEffect(() => {
     const handleScroll = () => {
