@@ -79,8 +79,8 @@ function App() {
 
   const projects = [
     {
-      title: 'A Django-based API for dynamic e-commerce pricing using Reinforcement Learning',
-      description: 'A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.',
+      title: 'Smart Pricing API with Django & Reinforcement Learning',
+      description: 'A Django-based API for dynamic e-commerce pricing using Reinforcement Learning (OpenAI Gym + Stable Baselines3). Built with my colleague, it lets products adjust prices based on stock, sales, and history.',
       image: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
       liveUrl: '#', // Replace with your project URL
