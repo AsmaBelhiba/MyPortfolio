@@ -3,6 +3,7 @@ import { ChevronDown, Code, Palette, Zap, Mail, Phone, MapPin, Download, Externa
 import aibetterImg from './assets/aibetter.png';
 import cv from './assets/CV - Asma Belhiba.pdf';
 import demo from './assets/Demo Video  Created by  Asma Belhiba.mp4';
+import pageImg from './assets/home page.png';
 function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -91,7 +92,7 @@ function App() {
     {
       title: 'Nutra, a smart nutrient-tracking web app',
       description: 'Nutra is a smart nutrient-tracking web app built with Django, JavaScript, and Tailwind CSS. It offers secure authentication, detailed nutrient logging, and interactive dashboards to help users monitor their eating habits. Powered by Mistral AI, it delivers personalized, context-aware nutrition tips',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: pageImg,
       technologies: ['React', 'Firebase', 'Tailwind CSS', 'Framer Motion'],
       liveUrl: '#', // Replace with your project URL
       githubUrl: 'https://github.com/AsmaBelhiba/FoodTracker' // Replace with your GitHub repo URL
@@ -483,7 +484,7 @@ function App() {
       <footer className={`py-8 px-6 border-t ${themeClasses.navBorder} relative z-10`}>
         <div className="max-w-6xl mx-auto text-center">
           <p className={themeClasses.textMuted}>
-            © 2024 {personalInfo.name}. Crafted with ❤️ and modern web technologies.
+            © 2025 {personalInfo.name}. Crafted with ❤️ and modern web technologies.
           </p>
         </div>
       </footer>
