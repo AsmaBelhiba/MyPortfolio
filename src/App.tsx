@@ -89,12 +89,12 @@ function App() {
       githubUrl: 'https://github.com/AsmaBelhiba/Django-RL-Pricing' // Replace with your GitHub repo URL
     },
     {
-      title: 'Task Management App',
+      title: 'Nutra, a smart nutrient-tracking web app',
       description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
       image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['React', 'Firebase', 'Tailwind CSS', 'Framer Motion'],
       liveUrl: '#', // Replace with your project URL
-      githubUrl: '#' // Replace with your GitHub repo URL
+      githubUrl: 'https://github.com/AsmaBelhiba/FoodTracker' // Replace with your GitHub repo URL
     },
     {
       title: 'Analytics Dashboard',
