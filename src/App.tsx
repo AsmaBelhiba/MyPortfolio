@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronDown, Code, Palette, Zap, Mail, Phone, MapPin, Download, ExternalLink, Github, Sun, Moon, Linkedin, Twitter } from 'lucide-react';
 import aibetterImg from './assets/aibetter.png';
 import cv from './assets/CV - Asma Belhiba.pdf';
-import demo from './assets/Demo Video  Created by  Asma Belhiba.mp4';
+import demo from './assets/Demo Video Created by Asma Belhiba.mp4';
 import pageImg from './assets/home page.png';
 import convert from './assets/convert.jpg';
 function App() {
