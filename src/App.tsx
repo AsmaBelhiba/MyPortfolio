@@ -93,7 +93,7 @@ function App() {
       title: 'Nutra, a smart nutrient-tracking web app',
       description: 'Nutra is a smart nutrient-tracking web app built with Django, JavaScript, and Tailwind CSS. It offers secure authentication, detailed nutrient logging, and interactive dashboards to help users monitor their eating habits. Powered by Mistral AI, it delivers personalized, context-aware nutrition tips',
       image: pageImg,
-      technologies: ['React', 'Firebase', 'Tailwind CSS', 'Framer Motion'],
+      technologies: ['Django', 'JavaScript' , 'Tailwind CSS', 'PostgreSQL'],
       liveUrl: '#', // Replace with your project URL
       githubUrl: 'https://github.com/AsmaBelhiba/FoodTracker' // Replace with your GitHub repo URL
     },
