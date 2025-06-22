@@ -99,11 +99,11 @@ function App() {
     },
     {
       title: 'Analytics Dashboard',
-      description: 'A comprehensive analytics dashboard with interactive charts, real-time data visualization, and customizable reporting features.',
+      description: 'Currency Converter is a sleek, responsive web application built with HTML, CSS, and JavaScript, designed to provide real-time currency conversions with a clean and intuitive user interface. This project emphasizes practical use of DOM manipulation, API integration, and responsive design principles, offering users a fast and user-friendly way to convert between global currencies.',
       image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Vue.js', 'D3.js', 'Python', 'FastAPI'],
+      technologies: ['JavaScript', 'HTML', 'CSS'],
       liveUrl: '#', // Replace with your project URL
-      githubUrl: '#' // Replace with your GitHub repo URL
+      githubUrl: 'https://github.com/AsmaBelhiba/Currency-conversion' // Replace with your GitHub repo URL
     }
   ];
 
