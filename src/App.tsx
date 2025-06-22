@@ -4,6 +4,7 @@ import aibetterImg from './assets/aibetter.png';
 import cv from './assets/CV - Asma Belhiba.pdf';
 import demo from './assets/Demo Video  Created by  Asma Belhiba.mp4';
 import pageImg from './assets/home page.png';
+import convert from './assets/convert.jpg';
 function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -98,9 +99,9 @@ function App() {
       githubUrl: 'https://github.com/AsmaBelhiba/FoodTracker' // Replace with your GitHub repo URL
     },
     {
-      title: 'Analytics Dashboard',
+      title: 'Currency Converter',
       description: 'Currency Converter is a responsive web app built with HTML, CSS, and JavaScript that allows users to convert currencies in real time. It showcases practical use of API integration, DOM manipulation, and clean UI design.',
-      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpg?auto=compress&cs=tinysrgb&w=800',
+      image: convert,
       technologies: ['JavaScript', 'HTML', 'CSS'],
       liveUrl: '#', // Replace with your project URL
       githubUrl: 'https://github.com/AsmaBelhiba/Currency-conversion' // Replace with your GitHub repo URL
