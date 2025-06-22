@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronDown, Code, Palette, Zap, Mail, Phone, MapPin, Download, ExternalLink, Github, Sun, Moon, Linkedin, Twitter } from 'lucide-react';
 import aibetterImg from './assets/aibetter.png';
 import cv from './assets/CV - Asma Belhiba.pdf';
-
+import demo from './assets/Demo Video  Created by  Asma Belhiba.mp4';
 function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -19,7 +19,7 @@ function App() {
     twitter: "https://x.com/asmabenhiba1/with_replies",
     github: "https://github.com/AsmaBelhiba",
     behance: "https://www.behance.net/asmaben_hiba",
-    resumeUrl: "/CV - Asma Belhiba.pdf" // Add your resume URL here
+    resumeUrl: cv // Add your resume URL here
   };
 
  const aboutInfo = {
