@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Code, Palette, Zap, Mail, Phone, MapPin, Download, ExternalLink, Github, Sun, Moon, Linkedin, Twitter } from 'lucide-react';
+import { ChevronDown, Code, Palette, Zap, Mail, Phone, MapPin, Download, ExternalLink, Github, Sun, Moon, Linkedin, Twitter, Eye, Layers, Brush, Image as ImageIcon } from 'lucide-react';
 import aibetterImg from './assets/aibetter.png';
 import cv from './assets/CV - Asma Belhiba.pdf';
 import demo from './assets/Demo Video Created by Asma Belhiba.mp4';
 import pageImg from './assets/home page.png';
 import convert from './assets/convert.jpg';
+
 function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isDarkMode, setIsDarkMode] = useState(true);
+  const [activeTab, setActiveTab] = useState('development');
 
   // Personal Information - Update these with your details
   const personalInfo = {
@@ -81,7 +83,7 @@ function App() {
     { name: 'Performance', level: 88, icon: Zap }
   ];
 
-  const projects = [
+  const developmentProjects = [
     {
       title: 'Smart Pricing API with Django & Reinforcement Learning',
       description: 'A Django-based API for dynamic e-commerce pricing using Reinforcement Learning (OpenAI Gym + Stable Baselines3). Built with my colleague, it lets products adjust prices based on stock, sales, and history.',
@@ -105,6 +107,58 @@ function App() {
       technologies: ['JavaScript', 'HTML', 'CSS'],
       liveUrl: '#', // Replace with your project URL
       githubUrl: 'https://github.com/AsmaBelhiba/Currency-conversion' // Replace with your GitHub repo URL
+    }
+  ];
+
+  // Add your graphic design projects here
+  const designProjects = [
+    {
+      title: 'Brand Identity Design',
+      description: 'Complete brand identity package including logo design, color palette, typography, and brand guidelines for a modern tech startup.',
+      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+      category: 'Branding',
+      tools: ['Adobe Illustrator', 'Photoshop', 'Figma'],
+      behanceUrl: personalInfo.behance
+    },
+    {
+      title: 'Mobile App UI Design',
+      description: 'Modern and intuitive mobile application interface design with focus on user experience and accessibility.',
+      image: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=800',
+      category: 'UI/UX',
+      tools: ['Figma', 'Adobe XD', 'Principle'],
+      behanceUrl: personalInfo.behance
+    },
+    {
+      title: 'Social Media Campaign',
+      description: 'Creative social media graphics and campaign materials for various brands, focusing on engagement and brand consistency.',
+      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
+      category: 'Social Media',
+      tools: ['Photoshop', 'Illustrator', 'Canva'],
+      behanceUrl: personalInfo.behance
+    },
+    {
+      title: 'Website Redesign',
+      description: 'Complete website redesign focusing on modern aesthetics, improved user experience, and conversion optimization.',
+      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+      category: 'Web Design',
+      tools: ['Figma', 'Adobe XD', 'Sketch'],
+      behanceUrl: personalInfo.behance
+    },
+    {
+      title: 'Print Design Collection',
+      description: 'Various print materials including brochures, flyers, and business cards with focus on typography and visual hierarchy.',
+      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+      category: 'Print Design',
+      tools: ['InDesign', 'Illustrator', 'Photoshop'],
+      behanceUrl: personalInfo.behance
+    },
+    {
+      title: 'Logo Design Portfolio',
+      description: 'Collection of unique logo designs for various industries, showcasing versatility in style and brand representation.',
+      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+      category: 'Logo Design',
+      tools: ['Illustrator', 'Photoshop'],
+      behanceUrl: personalInfo.behance
     }
   ];
 
@@ -345,62 +399,146 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-              Featured Projects
+              My Work
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
-            <p className={`${themeClasses.textMuted} text-lg max-w-2xl mx-auto`}>
-              A selection of recent projects that showcase my skills and passion for creating impactful digital solutions.
+            <p className={`${themeClasses.textMuted} text-lg max-w-2xl mx-auto mb-8`}>
+              Explore my development projects and creative design work that showcase both technical expertise and artistic vision.
             </p>
+
+            {/* Tab Navigation */}
+            <div className={`inline-flex ${themeClasses.card} backdrop-blur-xl rounded-xl p-2 border ${themeClasses.cardBorder} mb-12`}>
+              <button
+                onClick={() => setActiveTab('development')}
+                className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                  activeTab === 'development'
+                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                    : `${themeClasses.textMuted} hover:${themeClasses.textSecondary}`
+                }`}
+              >
+                <Code size={20} />
+                Development
+              </button>
+              <button
+                onClick={() => setActiveTab('design')}
+                className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                  activeTab === 'design'
+                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                    : `${themeClasses.textMuted} hover:${themeClasses.textSecondary}`
+                }`}
+              >
+                <Palette size={20} />
+                Graphic Design
+              </button>
+            </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div key={index} className={`${themeClasses.card} backdrop-blur-xl rounded-xl overflow-hidden border ${themeClasses.cardBorder} ${themeClasses.cardHover} transition-all duration-300 group shadow-lg hover:shadow-xl`}>
-                <div className="relative overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className={`absolute inset-0 ${isDarkMode ? 'bg-gradient-to-t from-slate-900/80' : 'bg-gradient-to-t from-white/80'} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
-                </div>
-                <div className="p-6">
-                  <h3 className={`text-xl font-bold mb-3 ${themeClasses.text}`}>{project.title}</h3>
-                  <p className={`${themeClasses.textMuted} mb-4 leading-relaxed`}>{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className={`${isDarkMode ? 'bg-blue-600/20 text-blue-300 border-blue-500/30' : 'bg-blue-100 text-blue-700 border-blue-300/50'} px-3 py-1 rounded-full text-sm border`}
+          {/* Development Projects */}
+          {activeTab === 'development' && (
+            <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+              {developmentProjects.map((project, index) => (
+                <div key={index} className={`${themeClasses.card} backdrop-blur-xl rounded-xl overflow-hidden border ${themeClasses.cardBorder} ${themeClasses.cardHover} transition-all duration-300 group shadow-lg hover:shadow-xl`}>
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className={`absolute inset-0 ${isDarkMode ? 'bg-gradient-to-t from-slate-900/80' : 'bg-gradient-to-t from-white/80'} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className={`text-xl font-bold mb-3 ${themeClasses.text}`}>{project.title}</h3>
+                    <p className={`${themeClasses.textMuted} mb-4 leading-relaxed`}>{project.description}</p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.technologies.map((tech) => (
+                        <span
+                          key={tech}
+                          className={`${isDarkMode ? 'bg-blue-600/20 text-blue-300 border-blue-500/30' : 'bg-blue-100 text-blue-700 border-blue-300/50'} px-3 py-1 rounded-full text-sm border`}
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex gap-4">
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-blue-500 hover:text-blue-400 transition-colors"
                       >
-                        {tech}
-                      </span>
-                    ))}
+                        <ExternalLink size={16} />
+                        Live Demo
+                      </a>
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex items-center gap-2 ${themeClasses.textMuted} hover:${themeClasses.textSecondary} transition-colors`}
+                      >
+                        <Github size={16} />
+                        Code
+                      </a>
+                    </div>
                   </div>
-                  <div className="flex gap-4">
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Design Projects */}
+          {activeTab === 'design' && (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {designProjects.map((project, index) => (
+                <div key={index} className={`${themeClasses.card} backdrop-blur-xl rounded-xl overflow-hidden border ${themeClasses.cardBorder} ${themeClasses.cardHover} transition-all duration-300 group shadow-lg hover:shadow-xl`}>
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute top-4 right-4">
+                      <span className={`${isDarkMode ? 'bg-purple-600/20 text-purple-300 border-purple-500/30' : 'bg-purple-100 text-purple-700 border-purple-300/50'} px-3 py-1 rounded-full text-sm border backdrop-blur-sm`}>
+                        {project.category}
+                      </span>
+                    </div>
+                    <div className={`absolute inset-0 ${isDarkMode ? 'bg-gradient-to-t from-slate-900/80' : 'bg-gradient-to-t from-white/80'} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center`}>
+                      <a
+                        href={project.behanceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-full p-3 hover:bg-white/30 transition-all duration-300"
+                      >
+                        <Eye size={24} className="text-white" />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className={`text-xl font-bold mb-3 ${themeClasses.text}`}>{project.title}</h3>
+                    <p className={`${themeClasses.textMuted} mb-4 leading-relaxed`}>{project.description}</p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tools.map((tool) => (
+                        <span
+                          key={tool}
+                          className={`${isDarkMode ? 'bg-purple-600/20 text-purple-300 border-purple-500/30' : 'bg-purple-100 text-purple-700 border-purple-300/50'} px-3 py-1 rounded-full text-sm border`}
+                        >
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
                     <a
-                      href={project.liveUrl}
+                      href={project.behanceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-blue-500 hover:text-blue-400 transition-colors"
+                      className="flex items-center gap-2 text-purple-500 hover:text-purple-400 transition-colors font-semibold"
                     >
-                      <ExternalLink size={16} />
-                      Live Demo
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex items-center gap-2 ${themeClasses.textMuted} hover:${themeClasses.textSecondary} transition-colors`}
-                    >
-                      <Github size={16} />
-                      Code
+                      <Brush size={16} />
+                      View on Behance
                     </a>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
