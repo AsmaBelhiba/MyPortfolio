@@ -58,13 +58,12 @@ function App() {
       verifyUrl: "https://www.coursera.org/account/accomplishments/certificate/D3D7EHFH2M3D"
     },
     {
-      title: "Meta Front-End Developer Certificate",
-      issuer: "Meta",
+      title: " Using Python to Interact with the Operating System",
+      issuer: "Google",
       date: "2023",
-      credentialId: "META-FE-345678",
-      description: "Professional certificate program covering modern front-end development with React and advanced JavaScript.",
-      skills: ["React", "JavaScript", "HTML/CSS", "UI/UX"],
-      verifyUrl: "#"
+      description: "Learned to automate tasks by writing Python scripts to manage files, directories, and processes, and interact with the operating system using standard libraries.",
+      skills: ["Operating Systems", "Regular Expressions", "Bash", "Python"],
+      verifyUrl: "https://www.coursera.org/account/accomplishments/certificate/5QHDTFLQHM6J"
     },
     {
       title: "Adobe Certified Expert - Photoshop",
