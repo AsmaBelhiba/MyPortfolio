@@ -66,13 +66,12 @@ function App() {
       verifyUrl: "https://www.coursera.org/account/accomplishments/certificate/5QHDTFLQHM6J"
     },
     {
-      title: "Adobe Certified Expert - Photoshop",
-      issuer: "Adobe",
+      title: "Introduction to Data Science",
+      issuer: "Cisco",
       date: "2022",
-      credentialId: "ADOBE-PS-901234",
-      description: "Advanced certification demonstrating expertise in Adobe Photoshop for professional design work.",
-      skills: ["Photo Editing", "Digital Design", "Creative Suite", "Visual Design"],
-      verifyUrl: "#"
+      description: "Learned the fundamentals of data analysis, visualization, and statistical thinking using Python, covering key concepts like data wrangling, exploratory analysis, and basic machine learning.",
+      skills: ["Big Data", "Data Analysis", "Machine Learning", "Data Science", "Artificial Intelligence (AI)"],
+      verifyUrl: "https://www.credly.com/badges/0dc19655-b110-4c36-8bc2-e1458b29e397/linked_in_profile"
     }
   ];
 
