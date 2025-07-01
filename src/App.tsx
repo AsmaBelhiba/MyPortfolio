@@ -45,7 +45,7 @@ function App() {
       title: "CCNA: Introduction to Networks",
       issuer: "Cisco",
       date: "2025",
-      description: "Introduction to Networks covers the basics of networking, including IP addressing, Ethernet, routing, and switching.",
+      description: "Learned core networking concepts including IP addressing, Ethernet, switching, and routing, and gained hands-on experience in configuring and troubleshooting basic networks.",
       skills: ["IP connectivity", "IP services", "IPv4 And IPv6 Addressing", "Network Fundamentals"],
       verifyUrl: "https://www.credly.com/badges/69407760-f368-4478-bd1b-7ad786eb0cde/linked_in_profile" // Add your verification URL
     },
