@@ -50,13 +50,12 @@ function App() {
       verifyUrl: "https://www.credly.com/badges/69407760-f368-4478-bd1b-7ad786eb0cde/linked_in_profile" // Add your verification URL
     },
     {
-      title: "Google Data Analytics Professional Certificate",
-      issuer: "Google",
+      title: "Introduction to Android Mobile Application Development",
+      issuer: "Meta",
       date: "2023",
-      credentialId: "GOOGLE-DA-789012",
-      description: "Complete data analytics program covering data cleaning, analysis, visualization, and storytelling.",
-      skills: ["Data Analysis", "SQL", "Tableau", "R Programming"],
-      verifyUrl: "#"
+      description: "Learned the basics of Android app development using Kotlin, including user input handling, and app lifecycle management with Android Studio.",
+      skills: ["Kotlin", "Mobile Applications", "User Interface"],
+      verifyUrl: "https://www.coursera.org/account/accomplishments/certificate/D3D7EHFH2M3D"
     },
     {
       title: "Meta Front-End Developer Certificate",
