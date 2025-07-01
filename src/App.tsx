@@ -514,7 +514,7 @@ function App() {
                   </div>
                   <div className="text-right">
                     <div className={`${themeClasses.textMuted} text-sm`}>{cert.date}</div>
-                    <div className={`${themeClasses.textMuted} text-xs mt-1`}>ID: {cert.credentialId}</div>
+                    <div className={`${themeClasses.textMuted} text-xs mt-1`}>{cert.credentialId}</div>
                   </div>
                 </div>
                 
