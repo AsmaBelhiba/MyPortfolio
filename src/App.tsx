@@ -42,13 +42,12 @@ function App() {
   // Add your certifications here
   const certifications = [
     {
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2024",
-      credentialId: "AWS-SAA-123456",
-      description: "Comprehensive certification covering cloud architecture, security, and best practices for AWS services.",
-      skills: ["Cloud Architecture", "AWS Services", "Security", "Scalability"],
-      verifyUrl: "#" // Add your verification URL
+      title: "CCNA: Introduction to Networks",
+      issuer: "Cisco",
+      date: "2025",
+      description: "ntroduction to Networks covers the basics of networking, including IP addressing, Ethernet, routing, and switching.",
+      skills: ["IP connectivity", "IP services", "IPv4 And IPv6 Addressing", "Network Fundamentals"],
+      verifyUrl: "https://www.credly.com/badges/69407760-f368-4478-bd1b-     7ad786eb0cde/linked_in_profile" // Add your verification URL
     },
     {
       title: "Google Data Analytics Professional Certificate",
