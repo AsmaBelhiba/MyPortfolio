@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Code, Palette, Zap, Mail, Phone, MapPin, Download, ExternalLink, Github, Sun, Moon, Linkedin, Twitter, Eye, Layers, Brush, Image as ImageIcon } from 'lucide-react';
+import { ChevronDown, Code, Palette, Zap, Mail, Phone, MapPin, Download, ExternalLink, Github, Sun, Moon, Linkedin, Twitter, Eye, Layers, Brush, Image as ImageIcon, Award, Briefcase, Calendar, Building } from 'lucide-react';
 import aibetterImg from './assets/aibetter.png';
 import cv from './assets/CV - Asma Belhiba.pdf';
 import demo from './assets/Demo Video Created by Asma Belhiba.mp4';
@@ -39,10 +39,101 @@ function App() {
   }
 };
 
+  // Add your certifications here
+  const certifications = [
+    {
+      title: "AWS Certified Solutions Architect",
+      issuer: "Amazon Web Services",
+      date: "2024",
+      credentialId: "AWS-SAA-123456",
+      description: "Comprehensive certification covering cloud architecture, security, and best practices for AWS services.",
+      skills: ["Cloud Architecture", "AWS Services", "Security", "Scalability"],
+      verifyUrl: "#" // Add your verification URL
+    },
+    {
+      title: "Google Data Analytics Professional Certificate",
+      issuer: "Google",
+      date: "2023",
+      credentialId: "GOOGLE-DA-789012",
+      description: "Complete data analytics program covering data cleaning, analysis, visualization, and storytelling.",
+      skills: ["Data Analysis", "SQL", "Tableau", "R Programming"],
+      verifyUrl: "#"
+    },
+    {
+      title: "Meta Front-End Developer Certificate",
+      issuer: "Meta",
+      date: "2023",
+      credentialId: "META-FE-345678",
+      description: "Professional certificate program covering modern front-end development with React and advanced JavaScript.",
+      skills: ["React", "JavaScript", "HTML/CSS", "UI/UX"],
+      verifyUrl: "#"
+    },
+    {
+      title: "Adobe Certified Expert - Photoshop",
+      issuer: "Adobe",
+      date: "2022",
+      credentialId: "ADOBE-PS-901234",
+      description: "Advanced certification demonstrating expertise in Adobe Photoshop for professional design work.",
+      skills: ["Photo Editing", "Digital Design", "Creative Suite", "Visual Design"],
+      verifyUrl: "#"
+    }
+  ];
+
+  // Add your internships here
+  const internships = [
+    {
+      company: "TechCorp Solutions",
+      position: "Full-Stack Developer Intern",
+      duration: "Jun 2024 - Aug 2024",
+      location: "Tunis, Tunisia",
+      type: "Remote",
+      description: "Developed and maintained web applications using React and Node.js. Collaborated with senior developers on client projects and contributed to the company's internal tools.",
+      achievements: [
+        "Built 3 client-facing web applications using React and TypeScript",
+        "Improved application performance by 40% through code optimization",
+        "Implemented responsive design principles across all projects",
+        "Participated in daily standups and sprint planning meetings"
+      ],
+      technologies: ["React", "Node.js", "TypeScript", "MongoDB", "Express.js"],
+      companyUrl: "#"
+    },
+    {
+      company: "Creative Design Studio",
+      position: "UI/UX Design Intern",
+      duration: "Jan 2024 - May 2024",
+      location: "Ariana, Tunisia",
+      type: "Hybrid",
+      description: "Worked on user interface design for mobile and web applications. Conducted user research and created wireframes, prototypes, and final designs.",
+      achievements: [
+        "Designed UI for 5+ mobile applications with 95% client satisfaction",
+        "Conducted user research sessions with 50+ participants",
+        "Created comprehensive design systems and style guides",
+        "Collaborated with development team to ensure design implementation"
+      ],
+      technologies: ["Figma", "Adobe XD", "Sketch", "Principle", "InVision"],
+      companyUrl: "#"
+    },
+    {
+      company: "DataTech Analytics",
+      position: "Data Science Intern",
+      duration: "Sep 2023 - Dec 2023",
+      location: "Tunis, Tunisia",
+      type: "On-site",
+      description: "Analyzed large datasets to extract business insights and built predictive models. Worked with machine learning algorithms and data visualization tools.",
+      achievements: [
+        "Developed predictive models with 85% accuracy for customer behavior",
+        "Created interactive dashboards using Tableau and Power BI",
+        "Processed and analyzed datasets containing 1M+ records",
+        "Presented findings to stakeholders and senior management"
+      ],
+      technologies: ["Python", "Pandas", "Scikit-learn", "Tableau", "SQL"],
+      companyUrl: "#"
+    }
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+      const sections = ['home', 'about', 'skills', 'certifications', 'internships', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -204,6 +295,8 @@ function App() {
                   { id: 'home', label: 'Home' },
                   { id: 'about', label: 'About' },
                   { id: 'skills', label: 'Skills' },
+                  { id: 'certifications', label: 'Certifications' },
+                  { id: 'internships', label: 'Experience' },
                   { id: 'projects', label: 'Projects' },
                   { id: 'contact', label: 'Contact' }
                 ].map(({ id, label }) => (
@@ -390,6 +483,159 @@ function App() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section id="certifications" className={`py-20 px-6 relative z-10 ${themeClasses.section} backdrop-blur-sm`}>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+              Certifications
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
+            <p className={`${themeClasses.textMuted} text-lg max-w-2xl mx-auto`}>
+              Professional certifications that validate my expertise and commitment to continuous learning.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {certifications.map((cert, index) => (
+              <div key={index} className={`${themeClasses.card} backdrop-blur-xl rounded-xl p-6 border ${themeClasses.cardBorder} ${themeClasses.cardHover} transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center">
+                    <div className={`${isDarkMode ? 'bg-green-600/20' : 'bg-green-100'} p-3 rounded-lg mr-4`}>
+                      <Award className="text-green-500" size={24} />
+                    </div>
+                    <div>
+                      <h3 className={`text-xl font-bold ${themeClasses.text} mb-1`}>{cert.title}</h3>
+                      <p className="text-green-500 font-semibold">{cert.issuer}</p>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <div className={`${themeClasses.textMuted} text-sm`}>{cert.date}</div>
+                    <div className={`${themeClasses.textMuted} text-xs mt-1`}>ID: {cert.credentialId}</div>
+                  </div>
+                </div>
+                
+                <p className={`${themeClasses.textSecondary} mb-4 leading-relaxed`}>
+                  {cert.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {cert.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className={`${isDarkMode ? 'bg-green-600/20 text-green-300 border-green-500/30' : 'bg-green-100 text-green-700 border-green-300/50'} px-3 py-1 rounded-full text-sm border`}
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+                
+                <a
+                  href={cert.verifyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-green-500 hover:text-green-400 transition-colors font-semibold"
+                >
+                  <ExternalLink size={16} />
+                  Verify Certificate
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Internships Section */}
+      <section id="internships" className="py-20 px-6 relative z-10">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+              Professional Experience
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
+            <p className={`${themeClasses.textMuted} text-lg max-w-2xl mx-auto`}>
+              Hands-on experience gained through internships and professional roles that shaped my career.
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {internships.map((internship, index) => (
+              <div key={index} className={`${themeClasses.card} backdrop-blur-xl rounded-xl p-8 border ${themeClasses.cardBorder} ${themeClasses.cardHover} transition-all duration-300 hover:transform hover:scale-[1.02] shadow-lg hover:shadow-xl`}>
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div className="md:col-span-1">
+                    <div className="flex items-center mb-4">
+                      <div className={`${isDarkMode ? 'bg-blue-600/20' : 'bg-blue-100'} p-3 rounded-lg mr-4`}>
+                        <Briefcase className="text-blue-500" size={24} />
+                      </div>
+                      <div>
+                        <h3 className={`text-xl font-bold ${themeClasses.text} mb-1`}>{internship.position}</h3>
+                        <a 
+                          href={internship.companyUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-500 hover:text-blue-400 transition-colors font-semibold"
+                        >
+                          {internship.company}
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-2">
+                        <Calendar size={16} className={themeClasses.textMuted} />
+                        <span className={themeClasses.textSecondary}>{internship.duration}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <MapPin size={16} className={themeClasses.textMuted} />
+                        <span className={themeClasses.textSecondary}>{internship.location}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Building size={16} className={themeClasses.textMuted} />
+                        <span className={`${internship.type === 'Remote' ? 'text-green-500' : internship.type === 'Hybrid' ? 'text-yellow-500' : 'text-blue-500'} font-semibold`}>
+                          {internship.type}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="md:col-span-2">
+                    <p className={`${themeClasses.textSecondary} mb-6 leading-relaxed`}>
+                      {internship.description}
+                    </p>
+                    
+                    <div className="mb-6">
+                      <h4 className={`${themeClasses.text} font-semibold mb-3`}>Key Achievements:</h4>
+                      <ul className="space-y-2">
+                        {internship.achievements.map((achievement, achievementIndex) => (
+                          <li key={achievementIndex} className={`${themeClasses.textSecondary} flex items-start gap-2`}>
+                            <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                            {achievement}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className={`${themeClasses.text} font-semibold mb-3`}>Technologies Used:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {internship.technologies.map((tech) => (
+                          <span
+                            key={tech}
+                            className={`${isDarkMode ? 'bg-blue-600/20 text-blue-300 border-blue-500/30' : 'bg-blue-100 text-blue-700 border-blue-300/50'} px-3 py-1 rounded-full text-sm border`}
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
